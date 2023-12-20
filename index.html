@@ -20,7 +20,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="assets/css/style.css?_v=20231218155230" rel="stylesheet">
+    <link href="assets/css/style.css?_v=20231220222235" rel="stylesheet">
 
 </head>
 
@@ -31,9 +31,7 @@
                 <div class="navbar__header-row row">
                     <div class="navbar__header-cols cols  is--logotip">
                         <a href="./" class="navbar__header-logotip">
-                            <svg class="icon-svg icon-logotip" role="img">
-                                <use xlink:href="assets/images/svg/sprite.svg#logotip"></use>
-                            </svg>
+                            <img src="assets/images/logo.svg" alt="">
                         </a>
                     </div>
                     <div class="navbar__header-cols cols  is--hamburger">
@@ -54,11 +52,7 @@
                     <div class="navbar__aside-row row">
                         <div class="navbar__aside-cols cols  is--logotip">
                             <a href="./" class="navbar__header-logotip">
-                                <span data-aos="fade-logotip" data-aos-delay="300">
-                                    <svg class="icon-svg icon-logotip" role="img">
-                                        <use xlink:href="assets/images/svg/sprite.svg#logotip"></use>
-                                    </svg>
-                                </span>
+                                <img src="assets/images/logo.svg" alt="">
                             </a>
                         </div>
                         <div class="navbar__aside-cols cols  is--nav" data-aos="fade-up" data-aos-duration="1500">
@@ -79,6 +73,14 @@
                                     <a href="./contacts.html" class="navbar__aside-nav-link  ">Контакты</a>
                                 </li>
                             </ul>
+                        </div>
+                        <div class="navbar__base-button">
+                            <a data-modal-link="modal-callback" href="" class="btn__item is--icon">
+                                <span>Свяжитесь с нами</span>
+                                <svg class="icon-svg icon-icon-next" role="img">
+                                    <use xlink:href="assets/images/svg/sprite.svg#icon-next"></use>
+                                </svg>
+                            </a>
                         </div>
                         <div class="navbar__aside-cols cols  is--lang" data-aos="fade-up" data-aos-duration="1500">
                             <ul class="navbar__aside-lang">
@@ -110,7 +112,7 @@
                     <div class="section__base-top base-section-top" data-aos="fade-down" data-aos-delay="300">
                         <h1 class="page-header__heading  is--page-index-header">
                             Профессиональное управление качеством жизни</h1>
-                        <a href="" class="base-section-top__button btn__item is--icon">
+                        <a data-modal-link="modal-callback" href="" class="base-section-top__button btn__item is--icon">
                             <span>Свяжитесь с нами</span>
                             <svg class="icon-svg icon-icon-next" role="img">
                                 <use xlink:href="assets/images/svg/sprite.svg#icon-next"></use>
@@ -173,6 +175,23 @@
             <div class="home-about__container container">
                 <div class="base-section">
                     <div class="home-about__items">
+                        <div class="home-about__item item-home-about">
+                            <div class="item-home-about__body">
+                                <a data-modal-link="modal-callback" href="" class="item-home-about__button btn__item  is--icon">
+                                    <span>Свяжитесь с нами</span>
+                                    <svg class="icon-svg icon-icon-next" role="img">
+                                        <use xlink:href="assets/images/svg/sprite.svg#icon-next"></use>
+                                    </svg>
+                                </a>
+
+                                <h3 class="item-home-about__title">Структура управления</h3>
+                                <div class="item-home-about__text">
+                                    <p>HeadOffice Construction предоставляет своим клиентам комплексную структуру управления процессом строительства
+                                        <br>и реновации недвижимости в Дубае.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="home-about__item item-home-about">
                             <div class="item-home-about__body">
                                 <div class="item-home-about__icon">
@@ -877,6 +896,56 @@
 
 
 
+        <div id="modal-callback" class="base-modal">
+            <div data-modal-close="" class="base-modal__close">
+                <svg>
+                    <use xlink:href="assets/images/icons/icons.svg#close"></use>
+                </svg>
+            </div>
+            <div class="base-modal__content">
+
+                <form action="#" class="base-modal__body">
+                    <div class="base-modal__items">
+                        <div class="base-modal__item">
+                            <div class="base-modal__label">Имя</div>
+                            <div class="base-modal__input">
+                                <div class="base-modal__icon">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#user"></use>
+                                    </svg>
+                                </div>
+                                <input placeholder="Введите своё имя" class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="base-modal__item">
+                            <div class="base-modal__label">Email</div>
+                            <div class="base-modal__input">
+                                <div class="base-modal__icon">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#email"></use>
+                                    </svg>
+                                </div>
+                                <input placeholder="Введите свой Email" class="input" type="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="base-modal__buttons">
+                        <button class="base-modal__button btn__item is--icon">
+                            <span>Перезвоните мне</span>
+                            <svg class="icon-svg icon-icon-next" role="img">
+                                <use xlink:href="assets/images/svg/sprite.svg#icon-next"></use>
+                            </svg>
+                        </button>
+                        <a href="" class="base-modal__button btn__item is--icon">
+                            <span>Позвонить</span>
+                            <svg class="icon-svg icon-icon-next" role="img">
+                                <use xlink:href="assets/images/svg/sprite.svg#icon-next"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
 
     </main>
 
@@ -913,10 +982,10 @@
         </div>
     </div>
 
-    <script src="assets/js/jquery-3.2.1.min.js?_v=20231218155230"></script>
-    <script src="assets/js/document-ready.js?_v=20231218155230"></script>
-    <script src="assets/js/svg4everybody.min.js?_v=20231218155230"></script>
-    <script src="assets/js/app.js?_v=20231218155230"></script>
+    <script src="assets/js/jquery-3.2.1.min.js?_v=20231220222235"></script>
+    <script src="assets/js/document-ready.js?_v=20231220222235"></script>
+    <script src="assets/js/svg4everybody.min.js?_v=20231220222235"></script>
+    <script src="assets/js/app.js?_v=20231220222235"></script>
     <script>
     svg4everybody();
     document.createElement("picture");
